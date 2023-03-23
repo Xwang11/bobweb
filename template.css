@@ -26,12 +26,6 @@ body{
     align-items: center;
 }
 
-.titleCaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .central-block {
     max-width: 100%;
     height: auto;
@@ -92,5 +86,9 @@ footer {
     margin-top: 5%;
     margin-bottom: 0;
     background-color: #dddddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
 
 }
