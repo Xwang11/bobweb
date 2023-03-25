@@ -1,0 +1,126 @@
+:root {
+    --prime-color: #fb1;
+    --second-color: #906;
+
+
+    font-family: 'comic sans', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'comic sans';
+    src: url('../misc/comicsans.ttf') format('truetype');
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: 100vh;
+    margin: 0;
+    /* background-image: url("../images/SphericalBob.jpg"); */
+    background-position: center;
+    background-size: 100vh;
+    background-attachment: local;
+}
+
+nav {
+    background-color: #333;
+}
+
+.navigator {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.navigator li.leftAlign {
+    margin-right: auto;
+}
+.navigator li.rightAlign {
+    margin-left: auto;
+}
+
+.navigator li:last-child {
+    margin-right: 0;
+}
+
+.navigator a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigator li a:hover:not(.active) {
+    background-color: #111;
+  }
+  .active {
+    background-color: var(--prime-color);
+  }
+
+  
+header {
+    margin-bottom: auto;
+    display: flex;
+    list-style: none;
+    font-size: 150%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prime-color);
+}
+
+header h1 {
+    font-size: 250%;
+}
+
+header h2 {
+    font-size: 100%;
+}
+
+
+main {
+    display: flex;
+    margin: 4vh;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main .header {
+    align-items: center;
+    
+}
+main img {
+    max-width: 100vh;
+}
+
+main .textbox{
+    text-align: left;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    height: 9vh;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prime-color);
+
+}
+
