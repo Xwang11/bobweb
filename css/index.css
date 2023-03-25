@@ -1,7 +1,13 @@
+:root {
+    --prime-color: #fb1;
+    --second-color: #BEE;
+}
+
 @font-face {
     font-family: 'comic sans';
-    src: url('comicsans.ttf') format('truetype');
+    src: url('../misc/comicsans.ttf') format('truetype');
 }
+
 html {
     font-family: 'comic sans', sans-serif;
     background-color: white;
@@ -16,7 +22,8 @@ body{
     margin-right: 5%;
     margin-top: 0%;
     margin-bottom: 0;
-    background-color: #fb1;
+    padding-bottom: 60px;
+    background-color: var(--prime-color);
 }
 
 .titleText {
@@ -42,6 +49,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    padding-bottom: 60px;
   }
 
 .center{
@@ -89,9 +97,18 @@ header {
     background-color: #dddddd;
 }
 
+main {
+    min-height: calc(100vh - 60px);
+}
+
 footer {
     margin-top: 5%;
     margin-bottom: 0;
+    height: 60px;
     background-color: #dddddd;
+    min-width: 100vh;
+    text-align: center;
+    position: relative;
+    bottom: 0;
 
 }
