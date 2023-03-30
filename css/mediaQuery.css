@@ -69,6 +69,7 @@ nav {
 
   
 header {
+    margin-bottom: auto;
     display: flex;
     list-style: none;
     font-size: 150%;
@@ -98,9 +99,10 @@ main {
 
 main .header {
     align-items: center;
+    
 }
 main img {
-    max-width: 100%;
+    max-width: 100vh;
 }
 
 main .textbox{
@@ -110,10 +112,12 @@ main .textbox{
 
 footer {
     margin-top: auto;
-    margin-bottom: 0%;
+    margin-bottom: 0;
+
     display: flex;
     flex-direction: row;
-    height: 9%;
+    height: 9vh;
+    min-width: 100vh;
     justify-content: center;
     align-items: center;
     background-color: var(--prime-color);

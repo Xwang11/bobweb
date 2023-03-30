@@ -1,6 +1,5 @@
 :root {
     --prime-color: #fb1;
-    --second-color: #BEE;
 }
 
 @font-face {
@@ -11,7 +10,7 @@
 html {
     font-family: 'comic sans', sans-serif;
     background-color: white;
-    min-height: 100vh;
+    height: 100%;
 
 }
 body{
