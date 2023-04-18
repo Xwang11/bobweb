@@ -14,7 +14,7 @@ class Vector {
     }
 }
 
-const images = ['../images/dvd.png', '../xwang11.github.io/images/SphericalBob.png', '../images/electron.png'];
+const images = ['../images/dvd.png', '../images/SphericalBob.png', '../images/electron.png'];
 var imgIndex = 0;
 
 // Define light class -> The moving object
