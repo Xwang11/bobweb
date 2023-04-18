@@ -1,3 +1,9 @@
 body canvas {
     min-width: 100%;
 }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

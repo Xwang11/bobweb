@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css"  href="../css/balls.css">
+    <title>Billiards</title>
     <link rel="stylesheet" type="text/css"  href="../css/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/balls.css">
 </head>
+
 <body>
-    <script src="../javascript/balls.js"></script>
-    <nav>
-        <ul class="navigator">
+    <nav><ul class="navigator">
             <li class="leftAlign"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">BobWeb.Page</a></li>
-            <li class="rightAlign"><a class = "active" href="../index.html">Home</a></li>
+            <li class="rightAlign"><a href="../index.html">Home</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="list.html">List</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a class = "active" href="balls.html">Billiards</a></li>
         </ul>
     </nav>
-    <header>
-        <h1>
-            Balls
-        </h1>
-    </header>
-    <main>
-        <button onclick="doThing()">Click me</button>
+    <header><h1>Billiards(In Progress)</h1></header>
+    <div class="buttons">
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="speedUp()">Speed Up</button>
+            <button onclick="slowDown()">Slow Down</button>
+            <button onclick="bigger()">Increase Size</button>
+            <button onclick="smaller()">Decrease Size</button>
+            <button onclick="clean()">Clear</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="next()">Switch Object</button>
+            <button onclick="snakeToggle()">Snake Mode</button>
+    </div>
         <p id="output">Test</p>
+        
+    <div class="billiardsCanvas">
         <canvas id="theCanvas" style ="border:2px solid"></canvas>
-    </main>
+    </div>
+
 
     <footer>
         <div class="Message"><p>Made with &#129505 </p></div>
     </footer>
+
+
+    <script src="../javascript/fun.js"></script>
 </body>
-
-
 </html>
