@@ -35,7 +35,10 @@ class Light {
 
         var img = new Image();
         img.src = images[imgIndex];
-        ctx.drawImage(img, this.x, this.y, this.size, this.size);
+        img.onload = function() {
+            ctx.drawImage(img, this.x, this.y, this.size, this.size);
+            console.log("done");
+       }
     }
 }
 
