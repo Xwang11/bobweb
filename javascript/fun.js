@@ -14,7 +14,7 @@ class Vector {
     }
 }
 
-const images = ['https://bobweb.page/images/SphericalBob.png', '../images/SphericalBob.png', '../images/electron.png'];
+const images = ["https://bobweb.page/images/SphericalBob.png", '../images/SphericalBob.png', '../images/electron.png'];
 var imgIndex = 0;
 
 // Define light class -> The moving object
@@ -35,12 +35,9 @@ class Light {
 
         var img = new Image();
         img.src = images[imgIndex];
-        img.onload = function () {
-            ctx.drawImage(img, this.x, this.y, this.size, this.size);
-            console.log("done");
+        ctx.drawImage(img, this.x, this.y, this.size, this.size);
         }
     }
-}
 
 // Declare new instance of light object
 var vec = new Vector(1, 1);
