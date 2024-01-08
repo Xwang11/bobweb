@@ -1,0 +1,197 @@
+
+:root {
+    --main: #A7D5F0;
+    --mainsolid: #328CC1;
+    --menu: #87A2CB;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-left: 20px;
+    border-right: 20px;
+    border-top: 30px;
+    border-style: solid;
+    border-color: white;
+}
+
+
+/* Drop Down Menu and Regular Horizonal Menu */
+/* Menu button */
+.dropbtn {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 24px;
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Contact Button */
+.menu a {
+    color: #000000;
+    font-size: 24px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    align-self: flex-end;
+}
+.menu a:hover {
+    display: block;
+    background-color: var(--main);
+    color: white;
+}
+/* Resource button */
+.menu #resources {
+    color: var(--mainsolid);
+}
+.menu #resources:hover {
+    display: block;
+    background-color: var(--main);
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 400%;
+    background-color: var(--menu);
+    z-index: 4;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--menu);
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#space {
+    flex-grow: 1;
+}
+
+
+/* Home page */
+
+.homeBackground {
+    background-color: var(--main);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeBackground .color-block {
+    position: absolute;
+    z-index: 1;
+}
+
+.homeBackground img {
+    position: absolute;
+    z-index: 2;
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 20%;
+}
+
+.homeBackground .text {
+    text-align: center;
+    z-index: 3;
+}
+
+.homeBackground h2 {
+    font-size: 40px;
+}
+
+.homeBackground h1 {
+    font-size: 90px;
+}
+
+
+
+/* Image gallery */
+
+.main-carousel {
+    margin: auto;
+    padding-top: 60px;
+    width: 800px;
+    overflow: clip;
+
+}
+
+.main-carousel .carousel-cell img {
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/* Text and image blocks */
+
+.sidebyside {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sidebyside img {
+    max-width: 50%;
+    height:auto;
+    flex-basis: 50%;
+    align-self:center;
+    flex-shrink: 8;
+    padding: 2%;
+}
+
+.sidebyside .textbox {
+    flex-basis: 50%;
+    align-self: flex-start;
+    flex-shrink: 1;
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    line-height: 1.5;
+}
+
+.footer {
+    text-align: center;
+    background-color: var(--main);
+    height: auto;
+}
